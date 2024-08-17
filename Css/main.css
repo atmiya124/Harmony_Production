@@ -1170,10 +1170,13 @@ small {
   }
   .heightlight_icone .heightlight_icone_img {
     max-width: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
   .heightlight_icone_text h2 {
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: center;
   }
   .Services_card {
     padding: 36px;

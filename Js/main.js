@@ -47,13 +47,27 @@ var swiper = new Swiper(".mySwiper", {
 
 
   var swiper = new Swiper(".mySwiperOne", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 20,
     loop: true,
 //     autoplay: {
 //      delay: 3000,
 //      disableOnInteraction: false,
 //  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
   });
 
   const buttons = document.querySelectorAll('button');
