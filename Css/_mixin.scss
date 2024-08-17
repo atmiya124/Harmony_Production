@@ -1,0 +1,81 @@
+
+@function vw($target) {
+	// $vw-context: (1366 * 0.01) * 1px;
+	$vw-context: (1383 * 0.01) * 1px;
+	@return ($target / $vw-context) * 1vw;
+	//font-size: vw(80px);
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin pos-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+// Clearfix
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+
+// breakpoints
+
+$S: 480px;
+$M: 768px;
+$L: 1024px;
+
+// media queries
+
+@mixin MQ($canvas) {
+	@if $canvas == S {
+	 @media only screen and (max-width: $S) { @content; }
+	}
+	@else if $canvas == M {
+	 @media only screen and (max-width: $M) { @content; }
+	}
+	@else if $canvas == L {
+	 @media only screen and (max-width: $L) { @content; }
+	}
+	@else {
+		@media only screen and (max-width: $canvas) { @content; }
+	}
+}
+
+
+//@include centerer(true, false);
+@mixin centerer($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		@include translate(-50%, -50%);
+	} @else if ($horizontal) {
+		left: 50%;
+		@include translate(-50%, 0);
+	} @else if ($vertical) {
+		top: 50%;
+		@include translate(0, -50%);
+	} @else {
+		top: 0;
+		@include translate(0, 0);
+	}
+}
