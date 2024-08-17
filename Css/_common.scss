@@ -30,3 +30,16 @@
       width: 95%;
     }
   }
+
+  .sm_hide {
+    @include MQ(M) {
+      display: none;
+    }
+  }
+
+  .md_hide {
+   display: none;
+   @include MQ(M) {
+    display: inline-block;
+   }
+  }
