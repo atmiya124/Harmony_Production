@@ -1021,14 +1021,7 @@
   </section>
   <!-- Section: Links  -->
 
-  <form method="post" id="contactForm2" class="contact_form">
-    <input type="text" name="fname" placeholder="Full Name" />
-    <input type="email" name="email" placeholder="Email" />
-    <input type="number" name="phone" placeholder="Phone Number" />
-    <input type="text" name="propertyAd" placeholder="Property Address" />
-    <input type="submit" value="Submit" class="submit_btn" />
-    <p class="msg"></p>
-</form>
+  
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -1068,22 +1061,22 @@
     );
   </script>
   <script>
-    $("#contactForm2").submit(function (e) {
+    $("#contact-form").submit(function (e) {
             e.preventDefault();
             // $('.loaderimg').show();
             $.ajax({
                 // url: "//tafadoner.ca/mailsend.php",
-                url: "//https://atmiya124.github.io/Harmony_Production/mailsend.php",
+                url: "//atmiya124.github.io/Harmony_Production/mailsend.php",
                 type: "POST",
-                data: $("#contactForm2").serialize(),
+                data: $("#contact-form").serialize(),
             })
             .done(function (data) {
-                $("#contactForm2 p.msg").html(data);
-                $("#contactForm2").trigger("reset");
+                $("#contact-form p.msg").html(data);
+                $("#contact-form").trigger("reset");
                 //   $('.loaderimg').hide();
             })
             .fail(function () {
-                $("#contactForm2 p.msg").html(
+                $("#contact-form p.msg").html(
                     "Oops! Something went wrong and we couldn't send your message."
                 );
                 //   $('.loaderimg').hide();
