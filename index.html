@@ -1062,27 +1062,29 @@
   </script>
   <script>
     $("#contact-form").submit(function (e) {
-            e.preventDefault();
-            // $('.loaderimg').show();
-            $.ajax({
-                // url: "//tafadoner.ca/mailsend.php",
-                url: "//atmiya124.github.io/Harmony_Production/mailsend.php",
-                type: "POST",
-                data: $("#contact-form").serialize(),
-            })
-            .done(function (data) {
-                $("#contact-form p.msg").html(data);
-                $("#contact-form").trigger("reset");
-                //   $('.loaderimg').hide();
-            })
-            .fail(function () {
-                $("#contact-form p.msg").html(
-                    "Oops! Something went wrong and we couldn't send your message."
-                );
-                //   $('.loaderimg').hide();
-            });
+        e.preventDefault();
+
+        console.log("Form data:", $("#contact-form").serialize());
+
+        $.ajax({
+            url: "https://atmiya124.github.io/Harmony_Production/mailsend.php",
+            type: "POST",
+            data: $("#contact-form").serialize(),
+        })
+        .done(function (data) {
+            console.log("Success:", data);
+            $("#contact-form p.msg").html(data);
+            $("#contact-form").trigger("reset");
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            console.error("Error:", textStatus, errorThrown);
+            $("#contact-form p.msg").html(
+                "Oops! Something went wrong and we couldn't send your message."
+            );
         });
-  </script>
+    });
+</script>
+
 </body>
 
 </html>
