@@ -1333,4 +1333,29 @@ small {
 /* media for common Section end */
 .swiper-pagination-bullet-active {
   background: var(--primary);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Footer Section Start*/
+.footer_social_icone a i {
+  color: var(--primary);
+}
+
+.footer_pro_link {
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.footer_logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer_contect_icone i {
+  color: var(--primary);
+}
+
+.footer_website {
+  color: var(--primary) !important;
+}
+
+/* Footer Section End*//*# sourceMappingURL=main.css.map */
