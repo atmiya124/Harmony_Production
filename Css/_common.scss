@@ -48,32 +48,8 @@ body {
   }
 }
 
-// .btn_common {
-//   font-size: 16px;
-//   font-weight: 600;
-//   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-//   margin: 30px 0 30px 0;
-//   display: flex;
-//   align-items: center;
-//   padding: 10px 20px 10px 20px;
-//   width: fit-content;
-//   justify-content: center;
-//   border-radius: 16px;
-//   color: var(--body-text-white);
-//   border: none;
-//   text-transform: uppercase;
-//   transition: all .3s ease-out;
-//   &:hover {
-//     color: var(--body-text-white);
-//     // background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 100%);
-//     background-position: 0% 100%;
-//   }
-// }
-
-
-
 .btn_common {
-  margin: 20px 0;
+    margin: 20px 10px;
     padding: 12px 24px;
     font-size: 16px;
     color: white;
@@ -85,7 +61,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     outline: none;
-
+    text-decoration: none;
     &:hover {
       color: white;
         background: linear-gradient(45deg, $secondary-color, $primary-color);
