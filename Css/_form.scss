@@ -44,6 +44,11 @@ input {
         color: rgba(#606060, 0.5);
         font-style: italic;
         font-weight: 400;
+        @include MQ(s) {
+            font-size: 20px;
+            padding: 10px;
+            border-bottom: 1px dashed rgb(72, 68, 68);
+        }
     }
 }
 

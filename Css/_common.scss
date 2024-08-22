@@ -9,7 +9,7 @@
   --body-text-grey: #d2d2d2;
   --primary: #f47f34;
   --secondary: #fbb431;
-  --section-margin: 50px 50px;
+  --section-margin: 0px 0px 50px 0px;
   --surface-color: #fff;
   --curve: 40;
 }
@@ -62,6 +62,16 @@ body {
     font-weight: bold;
     outline: none;
     text-decoration: none;
+    @include MQ(M){
+      margin: 25px 14px;
+      padding: 12px 24px;
+      font-size: 12px;
+    }
+    @include MQ(S){
+      margin: 16px 10px;
+      padding: 10px 18px;
+      font-size: 10px;
+    }
     &:hover {
       color: white;
         background: linear-gradient(45deg, $secondary-color, $primary-color);

@@ -20,9 +20,13 @@
 //     //     disableOnInteraction: false,
 //     //   },
 //   });
+
+
+// about_us Slider
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -41,24 +45,24 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 50,
       },
     },
-  //   autoplay: {
-  //     delay: 2000,
-  //     disableOnInteraction: false,
-  // },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+  },
   });
 
-
+// our_products Slider
   var swiper = new Swiper(".mySwiperOne", {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
-//     autoplay: {
-//      delay: 3000,
-//      disableOnInteraction: false,
-//  },
+    autoplay: {
+     delay: 2000,
+     disableOnInteraction: false,
+ },
   breakpoints: {
     640: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     768: {
