@@ -1,0 +1,95 @@
+.form_background {
+    font-family: "Lato", georgia;
+    font-size: 25px;
+    color: #5b5c66;
+    background-color: rgba(38, 31, 48, 0.22);
+    box-shadow: 8px 5px 21px 18px rgba(0, 0, 0, 0.39);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.11);
+}
+
+#contact-form {
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+label {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+textarea,
+input {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: none;
+    font-weight: 700;
+    font-family: "Lato", georgia;
+    font-size: 25px;
+    color: #5b5c66;
+    max-width: 90%;
+    padding: 1rem;
+    border: 2px dashed transparent;
+    box-sizing: border-box;
+    cursor: text;
+    border-bottom: 2px dashed rgb(72, 68, 68);
+    &:focus {
+        // background-color: rgba(72, 68, 68, 0.04);
+    }
+    &::placeholder {
+        text-align: left;
+        color: rgba(#606060, 0.5);
+        font-style: italic;
+        font-weight: 400;
+    }
+}
+
+textarea {
+    width: 90%;
+    resize: none;
+}
+
+.expanding {
+    vertical-align: top;
+}
+
+.send-icn {
+    fill: rgb(230, 222, 222);
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.submit_btn {
+    background: none;
+    border: none;
+    outline: none;
+    margin: 2vmax;
+    small {
+        padding: 10px 0;
+        color: white;
+        display: block;
+        opacity: .2;
+        transition: all .3s ease-out;
+    }
+   &:hover small {
+        opacity: 1;
+    }
+}
+
+
+.website {
+    opacity: 1;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 7%;
+    a {
+        color: #000;
+    }
+}

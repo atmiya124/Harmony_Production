@@ -20,20 +20,19 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <link href="Css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="Css/main.css">
+  
 
   <script src="https://kit.fontawesome.com/19e53dae00.js" crossorigin="anonymous">
   </script>
   <script src="https://unpkg.com/scrollreveal">
   </script>
-  <!-- Load jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
   <main class="main_container">
     <!-- Nav Bar Section end -->
-    <header class="header_container">
+    <!-- <header class="header_container">
       <div class="container">
         <nav class="navbar navbar-expand-lg  navbar-light  custom_inner_bg">
           <div class="container-fluid">
@@ -58,14 +57,236 @@
                 </a>
                 <a class="nav-link" href="#contect_Us">Contact Us
                 </a>
-                <!-- <a class="btn  btn_primary">Buy Ticket
-                  </a> -->
               </div>
             </div>
           </div>
         </nav>
       </div>
-    </header>
+    </header> -->
+  <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top nav_blury ">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img class="sm_hide" src="./Assests/logo-white.png">
+          <img class="md_hide" src="./Assests/logo-white-icon.png">
+        </a>
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product_us">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contect_Us">Contact Us</a>
+            </li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active hero_carousel_btn" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="hero_carousel_btn" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="hero_carousel_btn" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner carousel_inner_landing">
+        <div class="carousel-item active hero_carousel_pos_rle">
+          <img src="./Assests/new background.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block hero_carousel_pos_abs">
+            <h1>First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="button get_in_touch_container_btn">
+              <a class="btn_common">Get in touch today
+              </a>
+              <a class="btn_common">(437) 776-0479
+              </a>
+            </div>
+          </div>
+        </div>
+         <div class="carousel-item hero_carousel_pos_rle">
+          <img src="./Assests/new lighting 2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block hero_carousel_pos_abs">
+            <h1>First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="button get_in_touch_container_btn">
+              <a class="btn  btn_common" style="margin-right: 20px;">Get in touch today
+              </a>
+              <a class="btn  btn_common">(437) 776-0479
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item hero_carousel_pos_rle">
+          <img src="./Assests/new sound_stage.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block hero_carousel_pos_abs">
+            <h1>First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="button get_in_touch_container_btn">
+              <a class="btn  btn_common" style="margin-right: 20px;">Get in touch today
+              </a>
+              <a class="btn  btn_common">(437) 776-0479
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- Nav Bar Section end -->
+    <!-- Landing Page Section Start -->
+    <!-- <section class="hero_section margin_sec" >
+        <div class="container-fluid hero_bg_img">
+          <img src="./Assests/hero-5-bg.jpg">
+        </div>
+        <div class="container position_relative">
+          <div class="hero_inner_text">
+            <div class="image_container ani_sty_1">
+              <img src="./Assests/musicfest-1.png">
+            </div>
+            <div class="main_text_hero ani_sty_2">
+              <h2 class="main_text_hero_h2"> Unveil the Magic of Soundscapes 
+              </h2>
+            </div>
+            <div class="hero_banner_img_container">
+              <div class="row ani_sty_1">
+                <h3 class="fst-italic text-white fw-semibold mb-0 mb-md-3">Powered by
+                </h3>
+                <div class="sponsor-img">
+                  <a class="sponsor-img" target="_self" href="">
+                    <img src="./Assests/brand-1.png" alt="Spotify">
+                  </a>                           
+                  <a class="sponsor-img" target="_self" href="">
+                    <img src="./Assests/brand-3.png" alt="Spotify">
+                  </a>                         
+                  <a class="sponsor-img" target="_self" href="">
+                    <img src="./Assests/brand-4.png" alt="Spotify">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+    <!-- Landing Page Section end -->
+    <!-- <section class="margin_sec">
+<div class="container">
+<div class="section-title section-title-style-2 ">
+<span class="name straight-line-wrapper fw-semibold position-relative"> 
+<span class="straight-line">
+</span>Ticket
+</span>            
+<h2 class="title  mb-n2 d-flex flex-column">
+<span class="text_title text-auto">
+<span>Harmonia 
+</span>
+</span>
+<span class="sub_title  primary-text-shadow"> Admissions 
+</span> 
+</h2>
+</div>
+<div class="row">
+<div class="col-md-5">
+<div class="gride1">
+</div>
+</div>
+<div class="col-4">
+<div class="gride2">
+</div>
+</div>
+<div class="col-md-3">
+<div class="gride3">
+</div>
+</div>
+</div>
+</div>
+</section> -->
+    <!-- Video Section Start -->
+    <!-- <section class="margin_sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-lg-6 col-md-6 ani_sty_1">
+              <div class="section-title section-title-style-2 ">
+                <span class="name straight-line-wrapper fw-semibold position-relative"> 
+                  <span class="straight-line">
+                  </span>About The Event
+                </span>            
+                <h2 class="title  mb-n2 d-flex flex-column">
+                  <span class="text_title text-auto">
+                    <span>Soulful 
+                    </span>
+                  </span>
+                  <span class="sub_title  primary-text-shadow"> Symphony 
+                  </span> 
+                </h2>
+                <p class="video_para">
+                  Experience Harmonia: where melodies transcend boundaries. Immerse in captivating performances that ignite the stage. Unleash your musical senses and embrace rhythmic bliss.
+                  <br>
+                  <br>
+                  Don't miss this extraordinary celebration of music and create memories that will last a lifetime. 
+                </p>
+                <div class="button">
+                  <a class="btn  btn_common">Get in Touch today
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-6 col-md-6 ani_sty_2">
+              <div class="about-content-wrapper position-relative" >
+                <div class="about-image-1 position-relative">
+                  <div class="about-image-wrapper">
+                    <img decoding="async" src="./Assests/about-image-1.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="video-popup video-popup-center position-absolute">
+                    <div class="circle-wrapper">
+                      <div class="circle-bg">
+                      </div>
+                      <a href="https://www.youtube.com/watch?v=0O2aH4XLbto" target="_blank" class="inner-circle video-icon video-popup-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                          </path>
+                        </svg>
+                      </a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="about-image-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- Video Section end -->
+    <!-- About Us Section start -->
 
     <section class="margin_sec" id="about_us">
       <div class="container">
@@ -75,22 +296,22 @@
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./Assests/lineup-image-1.jpg">
+                    <img src="./Assests/image_carousal.jpg">
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assests/lineup-image-2.jpg">
+                    <img src="./Assests/new vertical led 5.jpg">
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assests/lineup-image-3.jpg">
+                    <img src="./Assests/image_carousel_2.jpg">
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assests/lineup-image-1.jpg">
+                    <img src="./Assests/new vertical led 4.jpg">
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assests/lineup-image-2.jpg">
+                    <img src="./Assests/image_carousel_3.jpeg">
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assests/lineup-image-3.jpg">
+                    <img src="./Assests/new vertical led 2.jpg">
                   </div>
                 </div>
                 <div class="swiper-pagination">
@@ -125,8 +346,7 @@
                     <br>
                     <br>
                     Backed by a team of passionate and driven individuals, we are committed to delivering premium but
-                    affordable quality products and exceptional service to our clients and partners. We want to
-                    <b><i>“create a connection that lasts”.</i></b>
+                    affordable quality products and exceptional service to our clients and partners. We want to <b style="color: var(--primary);"><i><u>“create a connection that lasts”.</u></i></b>
                   </p>
   
                 </div>
@@ -270,7 +490,7 @@
           <div class="col-12">
             <div class="get_in_touch_container">
               <h1 class="get_in_touch_container_text">
-                LED Video Wall & Services for your next big event!
+                <b style="color: var(--primary);"><i><u>"LED Video Wall & Services"</u></i></b>  for your next big event!
               </h1>
             </div>
           </div>
@@ -278,7 +498,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 position_relative_container_2">
           <div class="col">
             <div class="card">
-              <img src="./Assests/DOIT-VISION-Matrix-2.6mm-02-1024x768-1.jpg" class="card-img-top"
+              <img src="./Assests/hero-6.jpg" class="card-img-top"
                 alt="Hollywood Sign on The Hill" />
               <div class="card-body">
                 <h5 class="card-title">LED Displays - Ground/Cieling Supported</h5>
@@ -289,10 +509,10 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
-              <img src="./Assests/ea0bf4d4ae38764b4e2f4e8452c4d2a6.jpg" class="card-img-top" alt="Palm Springs Road" />
-              <div class="card-body">
-                <h5 class="card-title">Surround Sound System</h5>
+            <div class="card product_card">
+              <img src="./Assests/new sound_stage.jpg" class="card-img-top" alt="Palm Springs Road" />
+              <div class="card-body product_body">
+                <h5 class="card-title ">Surround Sound System</h5>
                 <p class="card-text">
                   Displayed with Crank Lifts up to 18’ in height.
                 </p>
@@ -301,7 +521,7 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="./Assests/led-frame-3.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
+              <img src="./Assests/new stage.jpg" class="card-img-top" alt="Los Angeles Skyscrapers" />
               <div class="card-body">
                 <h5 class="card-title">Stage Events</h5>
                 <p class="card-text">Displayed on our Truss Structures. Can be built as “Goal Post” or “Box Truss’ with
@@ -311,7 +531,7 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="./Assests/005-mobile-led-screen-trailer-guide.webp" class="card-img-top" alt="Skyscrapers" />
+              <img src="./Assests/new Impressive Lighting.jpg" class="card-img-top" alt="Skyscrapers" />
               <div class="card-body">
                 <h5 class="card-title">Impressive Lighting</h5>
                 <p class="card-text">
@@ -326,7 +546,7 @@
           <div class="col-12">
             <div class="get_in_touch_container">
               <h1 class="get_in_touch_container_text">
-                Transform Your Event with Harmony Production
+                Transform Your Event with <b style="color: var(--primary);"><i><u>"Harmony Production"</u></i></b> 
               </h1>
             </div>
             <div class="button get_in_touch_container_btn">
@@ -339,7 +559,193 @@
         </div>
       </div>
     </section>
-  
+    <!-- Our Product Services Section end -->
+    <!-- <section class="margin_sec">
+<div class="container client_container">
+<div class="row">
+<div class="col-md-7">
+<div class="section-title section-title-style-2 ">
+<span class="name straight-line-wrapper fw-semibold position-relative"> 
+<span class="straight-line">
+</span>The Power Behind Us
+</span>            
+<h2 class="title  mb-n2 d-flex flex-column">
+<span class="text_title text-auto">
+<span>Cadence 
+</span>
+</span>
+<span class="sub_title  primary-text-shadow"> Contributors 
+</span> 
+</h2>
+</div>
+</div>
+<div class="col-md-5">
+<p class="para_second_patten">
+Elevating the Music. Our valued partners and sponsors play a pivotal role in bringing our vision to life. With their support, we orchestrate an unforgettable music celebration that resonates.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="client_container_slider">
+<div class="border_container1">
+</div>
+<div class="logos">
+<div class="logos-slide">
+<img src="./Assests/brand-1.png" />
+<img src="./Assests/brand-3.png" />
+<img src="./Assests/brand-4.png" />
+<img src="./Assests/brand-5.png" />
+<img src="./Assests/brand-3 (1).png" />
+</div>
+<div class="logos-slide">
+<img src="./Assests/brand-1.png" />
+<img src="./Assests/brand-3.png" />
+<img src="./Assests/brand-4.png" />
+<img src="./Assests/brand-5.png" />
+<img src="./Assests/brand-3 (1).png" />
+</div>
+<div class="logos-slide">
+<img src="./Assests/brand-1.png" />
+<img src="./Assests/brand-3.png" />
+<img src="./Assests/brand-4.png" />
+<img src="./Assests/brand-5.png" />
+<img src="./Assests/brand-3 (1).png" />
+</div>
+</div>
+<div class="border_container2">
+</div>
+<div class="become_sponsor">
+<a class="btn  btn_sponsor">Become A Sponsor
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+    <!-- <section class="margin_sec">
+<div class="container">
+<div class="row">
+<ul class="cards">
+<li>
+<a href="" class="card">
+<img src="./Assests/corporate.webp" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">corporate events</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/private.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">Private Events</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/house of worship.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">House of Worship</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/concerts.webp" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header">
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+<div class="card__header-text">
+<h3 class="card__title">Concerts</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/Festivals.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">Festivals</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/graduation.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">Graduations</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/Fashion Shows.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">Fashion Shows</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+<li>
+<a href="" class="card">
+<img src="./Assests/Trade shows.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header"> 
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+<div class="card__header-text">
+<h3 class="card__title">Trade Shows</h3>            
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>      
+</li>
+</ul>
+</div>
+</div>
+</section> -->
     <!-- Services Section Start -->
     <section class="margin_sec" id="services">
       <div class="container">
@@ -441,7 +847,7 @@
                   <p class="title">Corporate Events
                   </p>
                 </div>
-                <img src="./Assests/corporate.webp" alt="article-cover" />
+                <img src="./Assests/corporate_2.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -453,7 +859,7 @@
                   <p class="title">Private Events
                   </p>
                 </div>
-                <img src="./Assests/private.jpg" alt="article-cover" />
+                <img src="./Assests/private_2.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -491,7 +897,7 @@
                   <p class="title">Concerts & Festivals
                   </p>
                 </div>
-                <img src="./Assests/Festivals.jpg" alt="article-cover" />
+                <img src="./Assests/Festivals_2.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -541,7 +947,7 @@
                   <p class="title">House Parties
                   </p>
                 </div>
-                <img src="./Assests/corporate.webp" alt="article-cover" />
+                <img src="./Assests/house_party.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -553,7 +959,7 @@
                   <p class="title">Sporting Events
                   </p>
                 </div>
-                <img src="./Assests/private.jpg" alt="article-cover" />
+                <img src="./Assests/sport_event.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -565,7 +971,7 @@
                   <p class="title">Weddings and Receptions
                   </p>
                 </div>
-                <img src="./Assests/house of worship.jpg" alt="article-cover" />
+                <img src="./Assests/wedding.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -577,7 +983,7 @@
                   <p class="title">Customized Events
                   </p>
                 </div>
-                <img src="./Assests/concerts.webp" alt="article-cover" />
+                <img src="./Assests/custom.jpg" alt="article-cover" />
               </div>
             </div>
           </div>
@@ -597,10 +1003,10 @@
               </span>
               <h2 class="title  mb-n2 d-flex flex-column">
                 <span class="text_title text-auto">
-                  <span>Value Leadership
+                  <span> Why choose us?
                   </span>
                 </span>
-                <span class="sub_title  primary-text-shadow">Why choose us?
+                <span class="sub_title  primary-text-shadow">Value Leadership
                 </span>
               </h2>
             </div>
@@ -777,25 +1183,116 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="get_in_touch_container">
-              <h1 class="get_in_touch_container_text">
-                A Partnership That Matters
-              </h1>
-            </div>
-            <div class="button get_in_touch_container_btn">
-              <a class="btn  btn_common" style="margin-right: 20px;">Get in touch today
-              </a>
-              <a class="btn  btn_common">(437) 776-0479
-              </a>
+          <div class="row">
+            <div class="col-12">
+              <div class="get_in_touch_container">
+                <h1 class="get_in_touch_container_text">
+                  <b style="color: var(--primary);"><i><u>"A Partnership"</u></i></b> That Matters
+                </h1>
+              </div>
+              <div class="button get_in_touch_container_btn">
+                <a class="btn  btn_common" style="margin-right: 20px;">Get in touch today
+                </a>
+                <a class="btn  btn_common">(437) 776-0479
+                </a>
+              </div>
             </div>
           </div>
         </div>
     </section>
     <!--  Why choose  Section End -->
-   
+    <!-- accordian Section Start -->
+    <!-- <section class="margin_sec">
+      <div class="container accordian_container">
+        <div class="row">
+          <div class="col-md-5 ani_sty_1">
+            <div class="section-title section-title-style-2 ">
+              <span class="name straight-line-wrapper fw-semibold position-relative">
+                <span class="straight-line">
+                </span> For Solutions
+              </span>
+              <h2 class="title  mb-n2 d-flex flex-column">
+                <span class="text_title text-auto">
+                  <span>Harmony
+                  </span>
+                </span>
+                <span class="sub_title  primary-text-shadow"> F&Q
+                </span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-7 ani_sty_2">
+            <div class="questions-container">
+              <div class="question">
+                <button>
+                  <span>What's the benefit of LED panels?
+                  </span>
+                  <i class="fas fa-chevron-down d-arrow">
+                  </i>
+                </button>
+                <p>The benefits include....
+                </p>
+              </div>
+              <div class="question">
+                <button>
+                  <span>What information is needed?
+                  </span>
+                  <i class="fas fa-chevron-down d-arrow">
+                  </i>
+                </button>
+                <p>You will need.....
+                </p>
+              </div>
+              <div class="question">
+                <button>
+                  <span>Size and Panel Calculator
+                  </span>
+                  <i class="fas fa-chevron-down d-arrow">
+                  </i>
+                </button>
+                <p>Add Calculator
+                </p>
+              </div>
+              <div class="question">
+                <button>
+                  <span>How long will it take to learn JavaScript?
+                  </span>
+                  <i class="fas fa-chevron-down d-arrow">
+                  </i>
+                </button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corporis pariatur a maiores minus
+                  tempore magni nam beatae dolores omnis.
+                </p>
+              </div>
+              <div class="question">
+                <button>
+                  <span>What's the best way to study JavaScript?
+                  </span>
+                  <i class="fas fa-chevron-down d-arrow">
+                  </i>
+                </button>
+                <p>Start With An Online Course.An online tutorial is probably the best way to learn JavaScript.If you're
+                  serious about learning fast, efficiently and without missing any important information, then you
+                  should consider enrolling in an online course.
+                </p>
+              </div>
+              <div class="question">
+                <button>
+                  <span>What should I learn after JavaScript / js?
+                  </span>
+                  <i class="fas fa-chevron-down d-arrow">
+                  </i>
+                </button>
+                <p>I suggest taking a look at Typescript and learning some popular frontend framework (Angular, React,
+                  Vue). If you are interested in backend, take a look at Node. js.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- accordian Section End -->
     <!-- Marquee Section Start -->
     <section class="">
       <div class="marquee">
@@ -845,12 +1342,162 @@
       </div>
     </section>
     <!-- Marquee Section end -->
-    
+    <!-- <section class="margin_sec">
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<div class="section-title section-title-style-2 ">
+<span class="name straight-line-wrapper fw-semibold position-relative"> 
+<span class="straight-line">
+</span>The Power Behind Us
+</span>            
+<h2 class="title  mb-n2 d-flex flex-column">
+<span class="text_title text-auto">
+<span>Harmonia 
+</span>
+</span>
+<span class="sub_title  primary-text-shadow"> Headlines 
+</span> 
+</h2>
+</div>
+</div>
+<div class="col-md-5">
+<p class="para_second_patten">
+Elevating the Music. Our valued partners and sponsors play a pivotal role in bringing our vision to life. With their support, we orchestrate an unforgettable music celebration that resonates.
+</p>
+</div>
+</div>
+</div>         
+</section> -->
+    <!-- <section class="margin_sec">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<div class="swiper mySwipertwo">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="row mySwipertwo_padding">
+<div class="col-md-6">
+<div class="blog-left-content">
+<div class="date_division">
+</div>
+<h2 class="main_text">
+This year's Live Performance we have never seen before
+</h2>
+<p class="sub_text">
+Live performances are the beating heart of the music industry. They represent a unique convergence of artistry, passion, and audience engagement that simply can’t be replicated in a studio recording.…
+</p>
+<div class="read_more">
+<a href="" target="_blank">Read More
+</a>
+<span class="icone_arrow">
+</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="blog-right-content">
+<img src="./Assests/Live-Performance-scaled-1.jpg" alt="">
+</img>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide"> 
+<div class="row mySwipertwo_padding">
+<div class="col-md-6">
+<div class="blog-left-content">
+<div class="date_division">
+</div>
+<h2 class="main_text">
+This year's Live Performance we have never seen before
+</h2>
+<p class="sub_text">
+Live performances are the beating heart of the music industry. They represent a unique convergence of artistry, passion, and audience engagement that simply can’t be replicated in a studio recording.…
+</p>
+<div class="read_more">
+<a href="" target="_blank">Read More
+</a>
+<span class="icone_arrow">
+</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="blog-right-content">
+<img src="./Assests/blog-image-3.png" alt="">
+</img>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="row mySwipertwo_padding">
+<div class="col-md-6">
+<div class="blog-left-content">
+<div class="date_division">
+</div>
+<h2 class="main_text">
+This year's Live Performance we have never seen before
+</h2>
+<p class="sub_text">
+Live performances are the beating heart of the music industry. They represent a unique convergence of artistry, passion, and audience engagement that simply can’t be replicated in a studio recording.…
+</p>
+<div class="read_more">
+<a href="" target="_blank">Read More
+</a>
+<span class="icone_arrow">
+</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="blog-right-content">
+<img src="./Assests/blog-image-4.png" alt="">
+</img>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="row mySwipertwo_padding">
+<div class="col-md-6">
+<div class="blog-left-content">
+<div class="date_division">
+</div>
+<h2 class="main_text">
+This year's Live Performance we have never seen before
+</h2>
+<p class="sub_text">
+Live performances are the beating heart of the music industry. They represent a unique convergence of artistry, passion, and audience engagement that simply can’t be replicated in a studio recording.…
+</p>
+<div class="read_more">
+<a href="" target="_blank">Read More
+</a>
+<span class="icone_arrow">
+</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="blog-right-content">
+<img src="./Assests/Live-Performance-scaled-1.jpg" alt="">
+</img>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>         
+</section> -->
     <!-- Form Section Start -->
     <section class="margin_sec" id="contect_Us">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 ani_sty_1">
+          <div class="col-md-5 ani_sty_1">
             <div class="section-title section-title-style-2 ">
               <span class="name straight-line-wrapper fw-semibold position-relative">
                 <span class="straight-line">
@@ -866,7 +1513,7 @@
               </h2>
             </div>
           </div>
-          <div class="col-md-5 ani_sty_2">
+          <div class="col-md-7 ani_sty_2">
             <p class="para_second_patten">
               Become Part of Our Harmonious Community and Receive Exclusive Updates, Special Offers, and Exciting News
               about the Festival Straight to Your Inbox.
@@ -878,7 +1525,7 @@
     <section class="margin_sec">
       <div class="container form_background">
         <div class="row ani_sty_3">
-          <form method="post" id="contact-form">
+          <form id="contact-form">
             <p>Dear Harmony Production team,
             </p>
             <p>My
@@ -892,17 +1539,17 @@
             <p>My
               <label for="email">email address
               </label> is
-              <input type="email" name="your-email" id="email" placeholder="(your email address)" required>. I look
-              forward to hearing from you within the next 24 hours to discuss further.
+              <input type="email" name="your-email" id="email" placeholder="(your email address)" required>. 
             </p>
             <p> I have a
               <label for="your-message">message
               </label> for you,
             </p>
             <p>
-              <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required>
-                  </textarea>
+              <textarea name="your-message" id="your-message" placeholder="(your msg here)" class=""></textarea>
             </p>
+            <p>I look
+              forward to hearing from you within the next 24 hours to discuss further.</p>
             <p>
               <button type="submit" class="submit_btn">
                 <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg"
@@ -912,11 +1559,9 @@
                     d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
                                l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
                 </svg>
-                <small>send
-                </small>
+                <small>Send</small>
               </button>
             </p>
-            <p class="msg"></p>
           </form>
           <!--   <small class='website'>Vist <a href='https://www.erlen.co.uk/' target='_blank'>erlen.co.uk</a> to see my work</small> -->
         </div>
@@ -967,16 +1612,16 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <a class="" href="home">
+          <a class="footer_logo" href="#" id="">
             <img class="sm_hide footer_logo" src="./Assests/logo-white.png">
-            <img class="md_hide" src="./Assests/logo-white-icon.png">
+            <img class="md_hide footer_logo" src="./Assests/logo-white-icon.png">
           </a>
           <!-- <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3"></i>Company name
           </h6> -->
           <p>
             <b><i>Harmony productions</i></b> is on a mission to provide high quality visual and services through state-of-the-art LED display technologies.<br>
-            We want to <b><i>“create a connection that lasts”</i></b>.
+            We want to <b style="color: var(--primary);"><i><u>“create a connection that lasts”.</u></i></b>
           </p>
         </div>
         <!-- Grid column -->
@@ -1003,16 +1648,37 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer_contect_icone">
+        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer_contect_section">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> Toronto, ON , Canada</p>
-          <p>
+          <a class="footer_contact_info"><i class="fas fa-home me-3"></i> Toronto, ON , Canada</a>
+          <a class="footer_contact_info">
             <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + (647) 886-1091</p>
-          <p><i class="fas fa-print me-3"></i> + (647) 936-8369</p>
+            info@harmonypixelproduction.com
+          </a>
+          <a class="footer_contact_info"><i class="fas fa-phone me-3"></i> + (647) 886-1091</a>
+          <a class="footer_contact_info"><i class="fas fa-print me-3"></i> + (647) 936-8369</a>
         </div>
         <!-- Grid column -->
       </div>
@@ -1021,6 +1687,9 @@
   </section>
   <!-- Section: Links  -->
 
+  <a href="https://wa.me/4372999360?text=Hello%20there!" target="_blank">
+    <button>Chat on WhatsApp</button>
+  </a>
   
 
   <!-- Copyright -->
@@ -1060,31 +1729,6 @@
     }
     );
   </script>
-  <script>
-    $("#contact-form").submit(function (e) {
-        e.preventDefault();
-
-        console.log("Form data:", $("#contact-form").serialize());
-
-        $.ajax({
-            url: "https://atmiya124.github.io/Harmony_Production/mailsend.php",
-            type: "POST",
-            data: $("#contact-form").serialize(),
-        })
-        .done(function (data) {
-            console.log("Success:", data);
-            $("#contact-form p.msg").html(data);
-            $("#contact-form").trigger("reset");
-        })
-        .fail(function (jqXHR, textStatus, errorThrown) {
-            console.error("Error:", textStatus, errorThrown);
-            $("#contact-form p.msg").html(
-                "Oops! Something went wrong and we couldn't send your message."
-            );
-        });
-    });
-</script>
-
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+
+
 // var swiper = new Swiper(".mySwiper", {
 //     effect: "coverflow",
 //     grabCursor: true,
@@ -98,7 +100,7 @@ var swiper = new Swiper(".mySwipertwo", {
   
 });
   
-// Auto resize input
+// Form JS ================================================================
 function resizeInput() {
   $(this).attr('size', $(this).val().length);
 }

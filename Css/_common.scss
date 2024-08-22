@@ -1,45 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    --dark-grey-black: #0a0c10;
-    --body-text-white: #fff;
-    --body-text-grey: #d2d2d2;
-    --primary: #b50c5e;
-    --secondary: #430ab5;
-    --section-margin: 50px 50px;
-    --surface-color: #fff;
-    --curve: 40;
-  }
-  html {
-    scroll-behavior: smooth;
-    font-family: "Open Sans", sans-serif;
-    overflow-x: hidden;
-  }
-  
-  body {
-    background-color: var(--dark-grey-black);
-    overflow-x: hidden;
-    font-family: "Open Sans", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-grey-black: #0a0c10;
+  --body-text-white: #fff;
+  --body-text-grey: #d2d2d2;
+  --primary: #f47f34;
+  --secondary: #fbb431;
+  --section-margin: 50px 50px;
+  --surface-color: #fff;
+  --curve: 40;
+}
 
-  .container {
-    @include MQ(S) {
-      width: 95%;
-    }
-  }
+$primary-color: #f47f34;
+$secondary-color: #fbb431;
 
-  .sm_hide {
-    @include MQ(M) {
-      display: none;
-    }
-  }
+html {
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
 
-  .md_hide {
-   display: none;
-   @include MQ(M) {
+body {
+  background-color: var(--dark-grey-black);
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  @include MQ(S) {
+    width: 95%;
+  }
+}
+
+.sm_hide {
+  @include MQ(M) {
+    display: none;
+  }
+}
+
+.md_hide {
+  display: none;
+  @include MQ(M) {
     display: inline-block;
-   }
   }
+}
+
+// .btn_common {
+//   font-size: 16px;
+//   font-weight: 600;
+//   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+//   margin: 30px 0 30px 0;
+//   display: flex;
+//   align-items: center;
+//   padding: 10px 20px 10px 20px;
+//   width: fit-content;
+//   justify-content: center;
+//   border-radius: 16px;
+//   color: var(--body-text-white);
+//   border: none;
+//   text-transform: uppercase;
+//   transition: all .3s ease-out;
+//   &:hover {
+//     color: var(--body-text-white);
+//     // background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 100%);
+//     background-position: 0% 100%;
+//   }
+// }
+
+
+
+.btn_common {
+  margin: 20px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(45deg, $primary-color, $secondary-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+
+    &:hover {
+      color: white;
+        background: linear-gradient(45deg, $secondary-color, $primary-color);
+        transform: scale(1.05);
+    }
+}
