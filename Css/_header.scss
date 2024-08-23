@@ -88,3 +88,11 @@
   backdrop-filter: blur(5px);
 }
 /* Nav bar Section End */
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse.show {
+  display: block;
+}

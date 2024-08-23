@@ -34,15 +34,15 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
       640: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 10,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 20,
       },
     },
     autoplay: {
@@ -56,10 +56,10 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
-    autoplay: {
-     delay: 2000,
-     disableOnInteraction: false,
- },
+//     autoplay: {
+//      delay: 2000,
+//      disableOnInteraction: false,
+//  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -77,16 +77,20 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   const buttons = document.querySelectorAll('button');
-
-buttons.forEach( button =>{
-    button.addEventListener('click',()=>{
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
         const faq = button.nextElementSibling;
         const icon = button.children[1];
 
-        faq.classList.toggle('show');
-        icon.classList.toggle('rotate');
-    })
-} )
+        if (faq) {
+            faq.classList.toggle('show');
+        }
+
+        if (icon) {
+            icon.classList.toggle('rotate');
+        }
+    });
+});
 
 
 var swiper = new Swiper(".mySwipertwo", {
