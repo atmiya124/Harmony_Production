@@ -1528,4 +1528,6 @@ textarea {
   }
 }
 .heightlight_icone {
-  display: fle
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
