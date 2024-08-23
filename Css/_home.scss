@@ -79,7 +79,7 @@
 .carousel_inner_landing{
     height: 100vh;
     @include MQ (L) {
-        height: 70vh;
+        height: 100vh;
        }
     @include MQ (M) {
        height: 100vh;
@@ -90,15 +90,28 @@
     width: 40px !important;
     }
 
-.hero_carousel_pos_rle {
-     position: relative;
-     .hero_carousel_pos_abs{
-        position: absolute;
-        top: 30%;
-        right: 50%;
-        }
-    }
+// .hero_carousel_pos_rle {
+//      position: relative;
+//      .hero_carousel_pos_abs{
+//         position: absolute;
+//         top: 30%;
+//         right: 50%;
+//         }
+//     }
+.hero_containt_container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+    .hero_containt_container_h1{
 
+    }
+    .hero_containt_container p{
+
+    }
+}
 .carousel-item {
     background-repeat: no-repeat;
     background-size: cover;
@@ -416,9 +429,18 @@ video-popup .circle-wrapper {
     box-shadow: none;
     margin-bottom: 10px;
 }
+.product_icone{
+    width: 30% !important;
+    height: auto !important;
+    fill: #ffa500 !important;
+    margin-right: 67%;
+    margin-bottom: 15px;
+    filter: drop-shadow(5px 5px 10px rgba(244, 127, 52, 0.2)) drop-shadow(-5px -5px 10px rgba(251, 180, 49, 0.2));
+    opacity: 0.8;
+}
 .heightlight_icone_text h2 {
-    font-size: 1.875rem;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--body-text-grey);
     text-align: left;
 }
@@ -433,6 +455,7 @@ video-popup .circle-wrapper {
 }
 .card {
     background-color: var(--dark-grey-black);
+    height: 100%;
 }
 .card .card-body{
     background: #80808012;
@@ -887,12 +910,11 @@ video-popup .circle-wrapper {
 }
 
 
-
 /* media for common Section start */
 
 @media (max-width: 1024px) {
     .contact_section{
-        padding-top: 30px;
+        padding-top: 80px;
     }
     .about-image-2 {
         margin-top: 24px;
@@ -935,7 +957,7 @@ video-popup .circle-wrapper {
     .heightlight_icone_text h2 {
         font-size: 1.5rem;
         font-weight: 700;
-        text-align: center;
+        text-align: left;
     }
     .Services_card {
         padding: 36px;
@@ -1069,6 +1091,9 @@ video-popup .circle-wrapper {
 }
 
 @media (max-width: 549px) {
+    .hero_containt_container{
+        display: none;
+    }
     .marquee h3 {
         font-size: 50px;
     }
@@ -1084,10 +1109,22 @@ video-popup .circle-wrapper {
     .section-title {
         margin-top: 10px;
     }
+    .contact_section {
+        padding-top: 60px;
+    }
     // .footer_logo {
     //     width: 25% !important;
     //     margin-bottom: 18px;
     // }
+}
+@media (max-width: 425px) {
+    .contact_section {
+        padding-top: 80px;
+    }
+    .get_in_touch_container_text {
+        font-size: 15px;
+        width: 100%;
+    }
 }
 
 /* media for common Section end */

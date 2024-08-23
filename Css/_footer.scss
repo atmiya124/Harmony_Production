@@ -4,6 +4,9 @@
         text-decoration: none;
         color: var(--gray);
         display: inline-block;
+        @include MQ(S) {
+         margin-left: 26px;   
+        }
         &:hover{
             color: var(--primary);
         }

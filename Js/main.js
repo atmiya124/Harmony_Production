@@ -56,10 +56,10 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
-//     autoplay: {
-//      delay: 2000,
-//      disableOnInteraction: false,
-//  },
+    autoplay: {
+     delay: 1000,
+     disableOnInteraction: false,
+ },
   breakpoints: {
     640: {
       slidesPerView: 2,
