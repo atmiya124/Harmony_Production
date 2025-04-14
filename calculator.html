@@ -5,153 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LED Panel Width Calculator</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f4f6fa;
-    padding: 10px;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .calculator, .preview {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    flex: 1 1 350px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #1f2937;
-  }
-
-  label {
-    margin-top: 10px;
-    display: block;
-    font-weight: 600;
-    color: #374151;
-    font-size: 15px;
-  }
-
-  select, input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    font-size: 15px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    outline: none;
-    transition: 0.3s ease;
-  }
-
-  input:focus, select:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
-  }
-
-  .result {
-    background: #f9fafb;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #111827;
-    margin-top: auto;
-  }
-
-  .screen-preview {
-    display: grid;
-    gap: 2px;
-    justify-content: center;
-    margin-top: 20px;
-    overflow-x: auto;
-  }
-
-  .panel {
-    width: 26px;
-    height: 26px;
-    background-color: #3b82f6;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 10px;
-    font-weight: bold;
-  }
-
-  button {
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #2563eb;
-  }
-
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  }
-</style>
+<link rel="stylesheet" href="Css/main.css">
 </head>
 <body>
-<div class="container">
-<div class="calculator">
-  <h2>LED Panel Calculator</h2>
-
-  <label>Total Panels:</label>
-  <input type="number" id="totalPanels" placeholder="Enter Total Panels">
-
-  <label>Panel Size (mm):</label>
-  <input type="number" id="panelSize" value="500" placeholder="Panel Size in mm">
-
-  <label>LED Screen Height:</label>
-  <input type="number" id="screenHeight" placeholder="Enter LED Screen Height">
-
-  <label>Unit:</label>
-  <select id="unit">
-    <option value="ft">Feet</option>
-    <option value="m">Meter</option>
-  </select>
-
-  <button onclick="calculate()">Calculate Width</button>
-
-  <div class="result" id="output"></div>
-</div>
-
-<div class="preview">
-  <h2>Screen Preview</h2>
-  <div class="screen-preview" id="screenPreview"></div>
-</div>
-</div>
-
+    
+    <div class="logo">
+        <a href="index.html">
+            <img src="./Assests/Logo-vertical.png" alt="">
+        </a>
+    </div>
+    <div class="calculator_container">
+        <div class="calculator">
+          <h2>LED Panel Calculator</h2>
+          <form onsubmit="event.preventDefault(); calculate();">
+            <div class="form-group">
+              <label>Total Panels:</label>
+              <input type="number" id="totalPanels" placeholder="Enter Total Panels">
+            </div>
+        
+            <div class="form-group">
+              <label>Panel Size (mm):</label>
+              <input type="number" id="panelSize" value="500" placeholder="Panel Size in mm">
+            </div>
+        
+            <div class="form-group">
+              <label>LED Screen Height:</label>
+              <input type="number" id="screenHeight" placeholder="Enter LED Screen Height">
+            </div>
+        
+            <div class="form-group">
+              <label>Unit:</label>
+              <select id="unit">
+                <option value="ft">Feet</option>
+                <option value="m">Meter</option>
+              </select>
+            </div>
+        
+            <button type="submit">Calculate Width</button>
+          </form>
+        
+          <div class="result" id="output"></div>
+        </div>
+        <div class="preview">
+          <h2>Screen Preview</h2>
+          <div class="screen-preview" id="screenPreview"></div>
+        </div>
+    </div>
 <script>
 function calculate() {
   const totalPanels = parseInt(document.getElementById('totalPanels').value);
